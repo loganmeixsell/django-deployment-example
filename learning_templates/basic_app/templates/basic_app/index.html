@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+    {% block body_block %}
+        <h1>Welcome to Index!</h1>
+        <h2>This is index.html of template inheritance!</h2>
+        <h1>{{ text|upper}}</h1>
+        {{ number|add:"10"}}
+        <h2>{{ text|cut:'world'}}</h2>
+    {% endblock %}
